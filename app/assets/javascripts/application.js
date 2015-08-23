@@ -15,3 +15,22 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+// Set Functions
+function navbarAddClass() {
+    if($(this).scrollTop() > 75) {
+        $('nav').addClass('scroll-bg');
+    } else {
+        $('nav').removeClass('scroll-bg');
+    }
+}
+
+$(window).on('scroll', function() {
+    navbarAddClass();
+});
+
+// Call default functions
+(function() {
+    // set class for navbar
+    navbarAddClass();
+})();

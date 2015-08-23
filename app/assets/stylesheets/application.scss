@@ -30,6 +30,7 @@
 
 .navbar {
   border: none;
+  height: auto;
 }
 
 .navbar-default {
@@ -39,6 +40,10 @@
 /***********
    Footer
 ***********/
+
+footer {
+  padding-top: 30px;
+}
 
 .footer {
   font-size: 1.1em;
@@ -56,3 +61,10 @@
                 HOME PAGE
 ******************************************/
 
+/******************
+ Carousel
+ ****************/
+
+.carousel-margin {
+  margin-top: 150px;
+}
